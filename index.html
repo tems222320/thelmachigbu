@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteSavvy | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>SiteSavvy</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text reveal">
+                    <h1 class="hero-title title-animate">
+                        <span class="gradient-text">Full Stack Developer</span>
+                        <br>
+                        Crafting Digital Excellence
+                    </h1>
+                    <p class="hero-subtitle">
+                        I build beautiful, responsive web applications that transform ideas into reality. 
+                        With a passion for clean code and modern design, I create solutions that users love.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="floating-card">
+                        <div class="card-content">
+                            <div class="card-badge">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h2>Web & API Architect</h2>
+                            <p>Building polished interfaces with scalable backend systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-main">
+                        <div class="about-text reveal">
+                            <p>I’m a full-stack developer who loves turning ideas into polished digital products. I build responsive web experiences with clean architecture, thoughtful interactions, and reliable backend systems.</p>
+                            <p>I focus on performance, usability, and maintainability so every project feels modern, easy to use, and scalable. I collaborate closely with clients to deliver solutions that solve real problems and grow with their business.</p>
+                            <div class="about-stats">
+                                <div class="stat">
+                                    <h3>6+</h3>
+                                    <p>Years of Experience</p>
+                                </div>
+                                <div class="stat">
+                                    <h3>10+</h3>
+                                    <p>Projects Completed</p>
+                                </div>
+                                <div class="stat">
+                                    <h3>100%</h3>
+                                    <p>Client Satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-image reveal">
+                            <img src="./img/WhatsApp%20Image%202026-05-11%20at%208.29.44%20AM.jpeg" alt="Developer working on a laptop">
+                        </div>
+                    </div>
+                    <div class="about-skills reveal">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-list">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">HTML & CSS</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Git</span>
+                            <span class="tech-badge">Bootstrap</span>
+                            <span class="tech-badge">Tailwind CSS</span>
+                            <span class="tech-badge">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card reveal" tabindex="0">
+                        <div class="project-image">
+                            <img src="./img/Image-01.webp" alt="AI e-commerce dashboard illustration">
+                            <div class="project-overlay">
+                                <button class="project-link" aria-label="View project details" type="button">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-featured online store with product catalog, shopping cart, secure payment processing, and admin dashboard for inventory management.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" tabindex="0">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop" alt="Business Website">
+                            <div class="project-overlay">
+                                <button class="project-link" aria-label="View project details" type="button">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Corporate Website</h3>
+                            <p>Modern, responsive corporate site featuring service showcase, team profiles, client testimonials, and contact forms with email integration.</p>
+                            <div class="project-tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" tabindex="0">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Task Management App">
+                            <div class="project-overlay">
+                                <button class="project-link" aria-label="View project details" type="button">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>Collaborative task management application with real-time updates, team collaboration features, and comprehensive project tracking tools.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Firebase</span>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category reveal">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                <p>HTML5</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                                <p>CSS3</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                                <p>React</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-php"></i></div>
+                                <p>PHP</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                                <p>Node.js</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <p>MySQL</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                                <p>Docker</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3>Tools & Other</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                                <p>Git</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                                <p>REST APIs</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                                <p>Responsive Design</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                                <p>Performance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Work Together</h2>
+                <div class="contact-grid">
+                    <div class="contact-text reveal">
+                        <p>Have an exciting project in mind? I'd love to hear about it. Let's create something amazing together.</p>
+                        <div class="contact-methods">
+                            <a href="mailto:your.email@example.com" class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email Me</span>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-method">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-method">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form reveal">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Marcus Thelma. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
