@@ -86,29 +86,36 @@ if (contactForm) {
         e.preventDefault();
         
         const formData = new FormData(contactForm);
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            message: formData.get('message')
-        };
+        const name = (formData.get('name') || '').trim();
+        const email = (formData.get('email') || '').trim();
+        const message = (formData.get('message') || '').trim();
 
-        // Show success message
+        if (!message) {
+            return;
+        }
+
+        const fullMessage = `Hello! My name is ${name || 'a visitor'}.
+Email: ${email || 'Not provided'}.
+
+${message}`;
+        const whatsappUrl = `https://wa.me/message/GHLCNZD4AGOSP1?text=${encodeURIComponent(fullMessage)}`;
+
         const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-        
-        submitBtn.textContent = '✓ Message Sent!';
-        submitBtn.style.background = '#10b981';
-        
-        // Reset form
-        contactForm.reset();
-        
-        // Reset button after 3 seconds
-        setTimeout(() => {
-            submitBtn.textContent = originalText;
-            submitBtn.style.background = '';
-        }, 3000);
+        const originalText = submitBtn ? submitBtn.textContent : 'Send Message';
 
-        console.log('Message:', data);
+        if (submitBtn) {
+            submitBtn.textContent = 'Opening WhatsApp...';
+            submitBtn.disabled = true;
+        }
+
+        window.open(whatsappUrl, '_blank');
+
+        setTimeout(() => {
+            if (submitBtn) {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        }, 3000);
     });
 }
 
