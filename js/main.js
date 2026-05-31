@@ -94,10 +94,7 @@ if (contactForm) {
             return;
         }
 
-        const fullMessage = `Hello! My name is ${name || 'a visitor'}.
-Email: ${email || 'Not provided'}.
-
-${message}`;
+        const fullMessage = `Hello! My name is ${name || 'a visitor'}.\nEmail: ${email || 'Not provided'}.\n\n${message}`;
         const whatsappUrl = `https://wa.me/message/GHLCNZD4AGOSP1?text=${encodeURIComponent(fullMessage)}`;
 
         const submitBtn = contactForm.querySelector('button[type="submit"]');
@@ -115,7 +112,7 @@ ${message}`;
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
             }
-        }, 3000);
+        }, 2000);
     });
 }
 
