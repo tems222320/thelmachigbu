@@ -95,7 +95,8 @@ if (contactForm) {
         }
 
         const fullMessage = `Hello! My name is ${name || 'a visitor'}.\nEmail: ${email || 'Not provided'}.\n\n${message}`;
-        const whatsappUrl = `https://wa.me/message/GHLCNZD4AGOSP1?text=${encodeURIComponent(fullMessage)}`;
+        const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(fullMessage)}`;
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent || '');
 
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn ? submitBtn.textContent : 'Send Message';
@@ -105,7 +106,11 @@ if (contactForm) {
             submitBtn.disabled = true;
         }
 
-        window.open(whatsappUrl, '_blank');
+        if (isMobile) {
+            window.location.href = whatsappUrl;
+        } else {
+            window.open(whatsappUrl, '_blank');
+        }
 
         setTimeout(() => {
             if (submitBtn) {
